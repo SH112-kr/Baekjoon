@@ -1,0 +1,19 @@
+a = int(input())
+b = int(input())
+c = int(input())
+
+num = a * b * c
+num = list(str(num))
+
+count={}
+for i in num:
+    try: 
+        count[i] += 1
+    except:
+        count[i] = 1
+
+
+
+for i in range(0,10):
+    try:print(count[str(i)])
+    except:print("0")
